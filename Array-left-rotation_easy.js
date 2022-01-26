@@ -16,3 +16,14 @@ function rotLeft(a, d) {
     
     return a;
 }
+//best solution
+function rotLeft(a, d) {
+    // Write your code here
+    let a2 = a;
+    for (let i = 0; i < d; i++) {
+        const firstItem=a2.shift();
+        a2.push(firstItem);
+    }
+    
+    return a2;
+}
